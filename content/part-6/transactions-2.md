@@ -43,7 +43,7 @@ func (cli *CLI) send(from, to string, amount int) {
 
 ## UTXO 集
 
-在 Part 3: 持久化和命令行接口 中，我们研究了 Bitcoin Core 是如何在一个数据库中存储块的，并且了解到区块被存储在 `blocks` 数据库，交易输出被存储在 `chainstate` 数据库。会回顾一下 `chainstate` 的机构：
+在 Part 3: 持久化和命令行接口 中，我们研究了 Bitcoin Core 是如何在一个数据库中存储块的，并且了解到区块被存储在 `blocks` 数据库，交易输出被存储在 `chainstate` 数据库。会回顾一下 `chainstate` 的结构：
 
 1. `c` + 32 字节的交易哈希 -> 该笔交易的未花费交易输出记录
 2. `B` + 32 字节的块哈希 -> 未花费交易输出的块哈希
